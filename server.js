@@ -6,7 +6,7 @@ const fs = require('fs');
 const { Mistral } = require('@mistralai/mistralai');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ========== إعداد Mistral AI ==========
 const mistral = new Mistral({ apiKey: 'aiNyD6VIL7qR8m4IVnCUlzW4LLsnxSWW' });
